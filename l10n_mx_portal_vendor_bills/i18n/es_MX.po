@@ -1,0 +1,366 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_mx_portal_vendor_bills
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-28 19:55+0000\n"
+"PO-Revision-Date: 2018-01-28 14:07-0600\n"
+"Last-Translator: OscarAlca <oszckar@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.0.5\n"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.attachments_uploaded
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:164
+#, python-format
+msgid ", </span> Customer RFC: <span level=\"2\">"
+msgstr ", </span> RFC de cliente: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:167
+#, python-format
+msgid ", </span> Invoice Total: <span level=\"2\">"
+msgstr ", </span> Total Factura: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:161
+#, python-format
+msgid ", </span> Supplier invoice number: <span level=\"2\">"
+msgstr ", </span> Numero de factura de proveedor: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:148
+#, python-format
+msgid ", </span> Your Company RFC: <span level=\"2\">"
+msgstr ", </span> RFC de tu compañía: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:150
+#, python-format
+msgid "</span> was not found or is disabled.</div>"
+msgstr "</span> no encontrado o deshabitado.</div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:175
+#, python-format
+msgid "<div><span level=\"1\">Missing Required Fields</span></div>"
+msgstr "<div><span level=\"1\">Faltan campos requeridos</span></div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:152
+#, python-format
+msgid "<div><span level=\"1\">Some taxes</span> do not exist for purchases: <span level=\"2\">"
+msgstr "<div><span level=\"1\">Algunos impuestos</span> no existen para las compras: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:150
+#, python-format
+msgid "<div><span level=\"1\">The XML Currency</span> <span level=\"2\">"
+msgstr "<div><span level=\"1\">La moneda del XML</span> <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:163
+#, python-format
+msgid "<div><span level=\"1\">The XML Emitter RFC</span> does not match with <span level=\"1\">Customer RFC</span>: "
+msgstr "<div><span level=\"1\">El RFC de emisor en el XML</span> no es igual al <span level=\"1\"> RFC del cliente</span>: "
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:160
+#, python-format
+msgid "<div><span level=\"1\">The XML Folio</span> does not match with <span level=\"1\">Supplier Invoice Number</span>: "
+msgstr "<div><span level=\"1\">El folio del XML</span> no coincide con <span level=\"1\">el numero de factura de proveedor</span>: "
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:147
+#, python-format
+msgid "<div><span level=\"1\">The XML Receptor RFC</span> does not match with <span level=\"1\">your Company RFC</span>: "
+msgstr "<div><span level=\"1\">El RFC de receptor en el XML</span> no coincide con <span level=\"1\">el RFC de tu compañía</span>: "
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:145
+#, python-format
+msgid "<div><span level=\"1\">The XML Supplier</span> was not found: <span level=\"2\">"
+msgstr "<div><span level=\"1\">El proveedor del XML</span> no fue encontrado: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:169
+#, python-format
+msgid "<div><span level=\"1\">The XML UUID</span> belong to other invoice. <span level=\"1\">Partner: </span>"
+msgstr "<div><span level=\"1\">El XML UUID</span> pertenece a otra factura. <span level=\"1\">Proveedor: </span>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:166
+#, python-format
+msgid "<div><span level=\"1\">The XML amount total</span> does not match with <span level=\"1\">Invoice total</span>: "
+msgstr "<div><span level=\"1\">El monto total en el XML</span> no corresponde con<span level=\"1\">el total de la factura</span>: "
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:156
+#, python-format
+msgid "<div><span level=\"1\">The XML state</span> is CANCELED in the SAT system.</div>"
+msgstr "<div><span level=\"1\">El estado del XML </span> es CANCELADO en el sistema del SAT.</div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:171
+#, python-format
+msgid "<div><span level=\"1\">The invoice reference</span> belong to other invoice of same partner. <span level=\"1\">Partner: </span>"
+msgstr "<div><span level=\"1\">La referencia de la factura</span> pertenece a otra factura del mismo proveedor. <span level=\"1\">Proveedor: </span>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:154
+#, python-format
+msgid "<div><span level=\"1\">UUID</span> not found in the XML.</div>"
+msgstr "<div><span level=\"1\">UUID</span> no encontrado en el XML.</div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:158
+#, python-format
+msgid "<div><span level=\"1\">Unable to generate invoices with discounts from an XML with version 3.2.</span>You can create the invoice manually and then attach the xml.</div>"
+msgstr "<div><span level=\"1\">No es posible generar facturas con descuentos de un XML versión 3.2.</span> Puedes crear la factura manualmente y luego cargar el XML</div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:173
+#, python-format
+msgid "<div><span level=\"1\">XML CFDI Version different than 3.3</span></div>"
+msgstr "<div><span level=\"1\">La versión del CFDI XML es diferente a 3.3</span></div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:177
+#, python-format
+msgid "<div><strong>Info!</strong> XML data could not be read correctly.</div>"
+msgstr "<div><strong>¡Informacion!</strong> Los datos en el XML no se pueden leer.</div>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+msgid ""
+"<span class=\"label label-default\">\n"
+"                                            <i class=\"fa fa-fw fa-remove\"/>Cancelled</span>"
+msgstr ""
+"<span class=\"label label-default\">\n"
+"                                            <i class=\"fa fa-fw fa-remove\"/>Cancelado</span>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                            <span class=\"icon-bar\"/>\n"
+"                            <span class=\"icon-bar\"/>"
+msgstr ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                            <span class=\"icon-bar\"/>\n"
+"                            <span class=\"icon-bar\"/>"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:169
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:171
+#, python-format
+msgid "<span level=\"1\"> Reference: </span>"
+msgstr "<span level=\"1\"> Referencia: </span>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Product</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Cantidad</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Total:</strong>"
+msgstr "<strong>Total:</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>Precio Unidad</strong>"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "Acknowledgment of receipt"
+msgstr "Acuse de recibo"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.attachments_uploaded
+msgid "If you have a problem, do not hesitate to contact us by phone:"
+msgstr "Si tienes algún problema, no dudes en contactarnos por teléfono:"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.model.fields,field_description:l10n_mx_portal_vendor_bills.field_res_partner_is_indirect
+msgid "Indirect Supplier"
+msgstr "Proveedor Indirecto"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "My Account"
+msgstr "Mi cuenta"
+
+#. module: l10n_mx_portal_vendor_bills
+#: code:addons/l10n_mx_portal_vendor_bills/controllers/main.py:78
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_mx_portal_vendor_bills
+#: code:addons/l10n_mx_portal_vendor_bills/controllers/main.py:74
+#, python-format
+msgid "Newest"
+msgstr "Mas nuevo"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+msgid "Order Date"
+msgstr "Fecha de pedido"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "PDF"
+msgstr "PDF"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.model,name:l10n_mx_portal_vendor_bills.model_res_partner
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.model,name:l10n_mx_portal_vendor_bills.model_purchase_order
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_home_menu_purchase
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_home_purchase
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+msgid "Purchase Orders"
+msgstr "Pedidos de compra"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+msgid "Purchase Orders #"
+msgstr "Ordenes de compra #"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "Taxes:"
+msgstr "Impuestos:"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.attachments_uploaded
+msgid "Thanks!"
+msgstr "¡Gracias!"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_home_purchase
+msgid "There are purchase orders on your account."
+msgstr "No hay ordenes de compra en su cuenta."
+
+#. module: l10n_mx_portal_vendor_bills
+#: code:addons/l10n_mx_portal_vendor_bills/controllers/main.py:82
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "Untaxed Amount:"
+msgstr "Total sin impuestos:"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "Upload"
+msgstr "Cargar"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_orders
+msgid "Upload documents"
+msgstr "Cargar documentos"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.portal_my_purchase_order
+msgid "XML"
+msgstr "XML"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:164
+#, python-format
+msgid "XML Emitter RFC: <span level=\"2\">"
+msgstr "RFC de emisor en el XML: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:161
+#, python-format
+msgid "XML Folio: <span level=\"2\">"
+msgstr "Folio en el XML: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:148
+#, python-format
+msgid "XML Receptor RFC: <span level=\"2\">"
+msgstr "RFC de receptor en el XML: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#. openerp-web
+#: code:addons/l10n_mx_portal_vendor_bills/static/src/js/attachments_form.js:167
+#, python-format
+msgid "XML amount total: <span level=\"2\">"
+msgstr "Monto total en el XML: <span level=\"2\">"
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.ui.view,arch_db:l10n_mx_portal_vendor_bills.attachments_uploaded
+msgid "Your documents were received correctly."
+msgstr "Tus documentos fueron recibidos correctamente."
+
+#. module: l10n_mx_portal_vendor_bills
+#: model:ir.model,name:l10n_mx_portal_vendor_bills.model_ir_attachment
+msgid "ir.attachment"
+msgstr "ir.attachment"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="attach_xmls_wizard_form_view">
+        <field name="name">attach_xmls_wizard_form</field>
+        <field name="model">l10n_mx_base.attachment.wizard</field>
+        <field name="arch" type="xml">
+            <form string="description">
+                <div style="margin:0px;padding:0px;">
+                    <field nolabel="1" name="dragndrop" widget="action_invoice_document_supplier" string="Attach Supplier XML's"/>
+                </div>
+                <sheet>
+                </sheet>
+                <footer>
+                    <button string="Close" class="oe_link btn-cancel-close-xmls" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_invoice_document_supplier" model="ir.actions.act_window">
+        <field name="name">Attach Supplier Files</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name='res_model'>l10n_mx_base.attachment.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="attach_xmls_wizard_form_view"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem action="action_invoice_document_supplier" id="menu_atach_xmls_wizard" name="Create Supplier Invoice from XML" parent="account.menu_finance_payables"/>
+</odoo>
