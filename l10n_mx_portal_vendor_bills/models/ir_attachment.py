@@ -57,8 +57,15 @@ class IrAttachment(models.Model):
         xml = objectify.fromstring(xml_string)
         parsed_node = self.get_etree(xml)
 
-        # Extract data from xml file
         cfdi_version = parsed_node.getparent().get('Version', False)
+        if cfdi_version != '3.3':
+            res['cfdi_version'] = True
+
+        # early return if errors found
+        if not res.get(xml_file.filename, True):
+            return res, xml_file.filename
+
+        # Extract data from xml file
         doc_number = parsed_node.getparent().get('Folio', False)
         serial = parsed_node.getparent().get('Serie', False)
         date = parsed_node.getparent().get('Fecha', False)
@@ -68,6 +75,4 @@ class IrAttachment(models.Model):
         filename = '%s_%s_%s_%s' % (
             supplier_vat, doc_number, serial, date[:10])
 
-        if cfdi_version != '3.3':
-            res['cfdi_version'] = True
         return res, filename
