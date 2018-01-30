@@ -217,7 +217,7 @@ class AttachXmlsWizard(models.TransientModel):
         inv_amount = inv.amount_total or 0.0
         inv_folio = inv.reference or ''
         exist_supplier = self.env['res.partner'].search(
-            ['&', ('vat', '=', xml_vat_emitter), '|',
+            ['&', ('vat', '=', 'MX%s' % (xml_vat_emitter)), '|',
              ('supplier', '=', True), ('customer', '=', True)], limit=1)
         exist_reference = xml_folio and inv_obj.search(
             [('reference', '=', xml_folio),
@@ -235,7 +235,7 @@ class AttachXmlsWizard(models.TransientModel):
             (validate_xml.Estado == 'Cancelado', {'cancel': True}),
             ((xml_uuid and uuid_dupli), {'uuid_duplicate': (
                 uuid_dupli.partner_id.name, uuid_dupli.reference)}),
-            ((inv_vat_receiver != xml_vat_receiver),
+            ((inv_vat_receiver != 'MX%s' % (xml_vat_receiver)),
              {'rfc': (xml_vat_receiver, inv_vat_receiver)}),
             ((not inv_id and exist_reference),
              {'reference': (xml_name_supplier, xml_folio)}),
@@ -248,9 +248,9 @@ class AttachXmlsWizard(models.TransientModel):
              {'taxes': xml_taxes.get('wrong_taxes', False)}),
             ((inv_id and inv_folio != xml_folio),
              {'folio': (xml_folio, inv_folio)}),
-            ((inv_id and inv_vat_emitter != xml_vat_emitter), {
+            ((inv_id and inv_vat_emitter != 'MX%s' % (xml_vat_emitter)), {
                 'rfc_supplier': (xml_vat_emitter, inv_vat_emitter)}),
-            ((inv_id and not float_is_zero(float(inv_amount)-float(
+            ((inv_id and not float_is_zero(float(inv_amount) - float(
                 xml_amount), precision_digits=2)), {
                     'amount': (xml_amount, inv_amount)})
         ]
