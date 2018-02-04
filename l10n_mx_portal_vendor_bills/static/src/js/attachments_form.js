@@ -173,6 +173,8 @@ odoo.define('l10n_mx_portal_vendor_bills.upload_attachments', function (require)
                     errors += _t('<div><span level="1">XML CFDI Version different than 3.3</span></div>');
                 }else if(ikey === 'required_fields'){
                     errors += _t('<div><span level="1">Missing Required Fields</span></div>');
+                }else if(ikey === 'error'){
+                    errors += _t('<div>' + val + '</div>');
                 }else if(ikey === 'nothing'){
                     errors += _t('<div><strong>Info!</strong> XML data could not be read correctly.</div>');
                 }

@@ -2,11 +2,13 @@
 # Copyright 2018 Vauxoo (Oscar Alcala <oscar@vauxoo.com>)
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 import json
+import logging
 from odoo import http, _
 from odoo.http import request
 from odoo.exceptions import AccessError
 from odoo.addons.website_portal.controllers.main import website_account
 
+_logger = logging.getLogger(__name__)
 
 class SaleOrderAttachments(http.Controller):
 
@@ -18,6 +20,8 @@ class SaleOrderAttachments(http.Controller):
         att_obj = request.env['ir.attachment']
         xml = post.get('xml[0]')
         errors, filename = att_obj.parse_xml(xml)
+    	_logger.info(errors)
+    	_logger.info(filename)
         if not errors.get(xml.filename):
             return json.dumps({'error_messages': errors})
         att_ids = purchase_obj.insert_attachment(

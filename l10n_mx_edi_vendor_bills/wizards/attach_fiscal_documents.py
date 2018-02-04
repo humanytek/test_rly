@@ -127,6 +127,7 @@ class AttachXmlsWizard(models.TransientModel):
                 'xml_signed': xml_str,
                 'l10n_mx_edi_time_invoice': date_inv[1],
                 'journal_id': journal.id,
+                'cfdi_complemento': 'na',
             })
 
             invoice_id._compute_l10n_mx_report_name()
