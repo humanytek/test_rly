@@ -39,13 +39,12 @@ class AttachXmlsWizard(models.TransientModel):
         return taxes
 
     @api.multi
-    def create_invoice(self, xml, supplier, currency_id, taxes):
+    def create_invoice(self, xml, supplier, currency_id):
         """ Create supplier invoice from xml file
             Args:
                 xml : xml file with the datas of purchase
                 supplier: (res.partner) supplier partner
                 currency_id: (res.currency) payment currency of the purchase
-                taxes: list with the datas of taxes
         """
         inv_obj = self.env['account.invoice']
         line_obj = self.env['account.invoice.line']
@@ -92,9 +91,8 @@ class AttachXmlsWizard(models.TransientModel):
                         amount)) * 100
 
                 domain_uom = [('name', '=ilike', uom)]
-                line_taxes = []
-                # line_taxes = [tax.get('id') for tax in
-                #                 self.get_impuestos(rec).get('taxes_ids', [])]
+                line_taxes = [tax['id'] for tax in
+                              self.get_impuestos(rec).get('taxes_ids', [])]
                 # code_sat = sat_code_obj.search(
                 #     [('code', '=', uom_code)], limit=1)
                 # domain_uom = [
@@ -140,10 +138,8 @@ class AttachXmlsWizard(models.TransientModel):
                 'error': [exce.__class__.__name__, str(exce)]}
 
     def get_impuestos(self, xml):
-
         if not hasattr(xml, 'Impuestos'):
             return {}
-
         taxes_list = {'wrong_taxes': [], 'taxes_ids': []}
         taxes_xml = xml.Impuestos
         taxes = []
@@ -265,9 +261,8 @@ class AttachXmlsWizard(models.TransientModel):
 
         if not inv_id:
             invoice_status = self.create_invoice(
-                xml, exist_supplier, exist_currency,
-                xml_taxes.get('taxes_ids', []))
-            if invoice_status['key']:
+                xml, exist_supplier, exist_currency)
+            if invoice_status.get('key', False):
                 del invoice_status['key']
                 invoice_status.update({key: True})
                 return invoice_status
