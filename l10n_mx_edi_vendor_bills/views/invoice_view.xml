@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_account_invoive_vendor_form_inh_attach">
+        <field name="name">view.account.invoice.vendor.form.inh.attach</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_invoice_open']" position="after">
+                <button name="%(action_invoice_document_supplier)d" type="action" string="Attach Fiscal Documents" states="open,paid"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
